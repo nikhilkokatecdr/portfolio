@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Kokate | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 60px;
+            font-size: 3em;
+            color: #111;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .image-stack {
+            position: relative;
+            width: 90%;
+            max-width: 300px;
+            height: 420px;
+            margin: 40px auto;
+        }
+
+        .image-stack img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform-origin: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-stack img:nth-child(1) {
+            transform: rotate(-10deg);
+            z-index: 1;
+        }
+
+        .image-stack img:nth-child(2) {
+            transform: rotate(10deg);
+            z-index: 2;
+        }
+
+        .image-stack img:nth-child(3) {
+            transform: rotate(0deg);
+            z-index: 3;
+        }
+
+        .image-stack:hover img:nth-child(1) {
+            transform: rotate(-15deg) scale(1.05);
+        }
+
+        .image-stack:hover img:nth-child(2) {
+            transform: rotate(15deg) scale(1.05);
+        }
+
+        .image-stack:hover img:nth-child(3) {
+            transform: scale(1.1);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .sections {
+            background: #fff;
+            padding: 40px 20px;
+            margin-top: 40px;
+            animation: fadeInUp 2s ease;
+        }
+
+        .sections h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .sections ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sections ul li {
+            margin: 10px 0;
+        }
+
+        .footer {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+            animation: fadeIn 2.5s ease;
+        }
+
+        a {
+            color: #0077ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .description, .sections {
+                padding: 20px 10px;
+            }
+
+            .image-stack {
+                height: auto;
+            }
+
+            .image-stack img {
+                position: relative;
+                transform: none !important;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nikhil Kokate</h1>
+    <div class="image-stack">
+        <img src="https://media.bio.site/sites/d098248b-781a-4517-8221-e4af40946e85/SCS2FXBW9jVvHsNQQJFoUc.jpg" alt="Nikhil">
+        <img src="https://media.bio.site/sites/d098248b-781a-4517-8221-e4af40946e85/SCS2FXBW9jVvHsNQQJFoUc.jpg" alt="Nikhil">
+        <img src="https://media.bio.site/sites/d098248b-781a-4517-8221-e4af40946e85/EQ8SKxCxHTiQMdHwTrDqXB.jpg" alt="Nikhil">
+    </div>
+
+    <div class="description">
+        <p>Hello, I'm <strong>Nikhil Kokate</strong> — a passionate Data Analyst, Software Tester, and Web Developer based in Pune, India. With hands-on experience in tools like Power BI and SQL, and a strong understanding of manual testing and front-end development, I create solutions that combine performance, precision, and visual appeal. Whether it’s analyzing streaming data, testing enterprise-grade software, or developing responsive websites — I bring energy, detail, and user-focus to everything I do.</p>
+    </div>
+
+    <div class="sections">
+        <h2>Skills</h2>
+        <ul>
+            <li>✔️ Data Analysis with SQL, Excel, Power BI, and Visualization</li>
+            <li>✔️ Manual Testing (UI, Regression, Functional, Smoke, etc.)</li>
+            <li>✔️ SQL (Queries, Joins, Aggregations, Data Validation)</li>
+            <li>✔️ Web Development: HTML, CSS, JavaScript</li>
+            <li>✔️ Tools: JIRA, TestLink, Git, Postman</li>
+            <li>✔️ Test Case Design, Bug Reporting, Defect Life Cycle</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Amazon Prime Data Analysis (Power BI)</strong> – Identified user behavior trends and streaming insights using DAX and data modeling.</li>
+            <li><strong>Netflix Data Analysis</strong> – Dashboard built with SQL and visualization tools to extract content trends, user segmentation, and viewership patterns.</li>
+            <li><strong>6-Month Testing Internship</strong> – Completed with Salesqueen Software Solutions (Chennai, Remote); practiced test planning, execution, and reporting in agile projects.</li>
+            <li><strong>Weather App</strong> – API-integrated web app showing real-time weather based on user input.</li>
+            <li><strong>Spotify & Facebook Clone</strong> – Web development practice with responsive UI, layout replication, and interactive design.</li>
+            <li><strong>OLX Clone</strong> – Buy/sell platform for electronics with login, ad posting, and admin management panel.</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:nikhilkokateofficial@gmail.com">nikhilkokateofficial@gmail.com</a></li>
+            <li>Instagram: <a href="https://instagram.com/nikhilkokateofficial" target="_blank">@nikhilkokateofficial</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/nikhildevchand">@nikhildevchand</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Nikhil Kokate. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
